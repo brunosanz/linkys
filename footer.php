@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <h5>Linkys</h5>
-        <p>Buscador que recomienda sitios web donde puedes obtener mejores resultados a tus búsquedas.</p>
+        <p>Buscador con sitios web recomendados donde puedes obtener mejores resultados a tus búsquedas.</p>
         <hr>
         <h5>Cómo usarlo</h5>
         <p>Puedes utilizarlo de 3 maneras:</p>
@@ -18,6 +18,7 @@
             <li>Búsqueda libre -> <strong> cursos para aprender javascript </strong></li>
         </ul>
         <p>En comandos y categorías terminar con <strong>dos puntos (:). </strong></p>
+        <p>Al utilizar un comando la búsqueda se realizará en el sitio ligado a ese comando.</p>
         <p>En categorías si se coloca algo que buscar, las recomendaciones mostradas ya tendrán en enlace listo para realizar la búsqueda.</p>
         <p>La búsqueda libre se realizará en Google.</p>
         <hr>
