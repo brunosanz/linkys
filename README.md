@@ -16,7 +16,7 @@ La búsqueda libre se realizará en Google.
 
 ## Comandos
 
-dafont - df:
+- dafont - df:
 Dialnet - dn:
 ELSEVIER - el:
 DeePL/en/es - en:
