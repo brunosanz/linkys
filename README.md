@@ -10,10 +10,12 @@ Puedes utilizarlo de 3 maneras:
 - Búsqueda libre -> cursos para aprender javascript
 
 En comandos y categorías terminar con dos puntos (:).
+
 En categorías si se coloca algo que buscar, las recomendaciones mostradas ya tendrán en enlace listo para realizar la búsqueda.
+
 La búsqueda libre se realizará en Google.
 
-## Comandos
+### Comandos
 
 - dafont - df:
 - Dialnet - dn:
@@ -41,7 +43,7 @@ La búsqueda libre se realizará en Google.
 - Unsplash - us:
 - ViX - vix:
 
-## Categorías
+### Categorías
 
 - font,fuente
 - edu,educacion
