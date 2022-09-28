@@ -1,5 +1,5 @@
 # Linkys
-Buscador que recomienda sitios web donde puedes obtener mejores resultados a tus búsquedas. Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
+Buscador con sitios web recomendados donde puedes obtener mejores resultados a tus búsquedas. Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
 
 # Cómo usarlo
 
@@ -11,7 +11,9 @@ Puedes utilizarlo de 3 maneras:
 
 En comandos y categorías terminar con dos puntos (:).
 
-En categorías si se coloca algo que buscar, las recomendaciones mostradas ya tendrán en enlace listo para realizar la búsqueda.
+Al utilizar un comando la búsqueda se realizará en el sitio ligado a ese comando.
+
+En categorías si se coloca algo que buscar, los sitios recomendados ya tendrán el enlace listo para realizar la búsqueda.
 
 La búsqueda libre se realizará en Google.
 
