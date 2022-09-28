@@ -5,13 +5,12 @@ Buscador que recomienda sitios web donde puedes obtener mejores resultados a tus
 
 Puedes utilizarlo de 3 maneras:
 
-Comandos -> ob: javascript
-Categorías -> cursos:
-Búsqueda libre -> cursos para aprender javascript
+- Comandos -> ob: javascript
+- Categorías -> cursos:
+- Búsqueda libre -> cursos para aprender javascript
+
 En comandos y categorías terminar con dos puntos (:).
-
 En categorías si se coloca algo que buscar, las recomendaciones mostradas ya tendrán en enlace listo para realizar la búsqueda.
-
 La búsqueda libre se realizará en Google.
 
 ## Comandos
