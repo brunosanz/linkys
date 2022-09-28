@@ -66,3 +66,11 @@ La búsqueda libre se realizará en Google.
 - Lenguaje: PHP
 - Framework: Bootstrap
 - Database: MySQL
+
+# Ejecutar en local
+
+1 Tener instalado un  servidor web local por ejemplo XAMPP.
+2 Clonar repositorio git@github.com:brunosanz/linkys.git en la ruta C:\xampp\htdocs (Windows)
+3 Desde http://localhost/phpmyadmin/ importar la base de datos shortcut.sql
+4 Probar la aplicación en el navegador con ruta http://localhost/linkys/
+ 
