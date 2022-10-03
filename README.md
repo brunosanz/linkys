@@ -91,5 +91,11 @@ La búsqueda libre se realizará en el sitio con más recomendación que tenga, 
 1. Tener instalado un  servidor web local por ejemplo XAMPP.
 2. Clonar repositorio git@github.com:brunosanz/linkys.git en la ruta C:\xampp\htdocs (Windows)
 3. Desde http://localhost/phpmyadmin/ importar la base de datos shortcut.sql
-4. Probar la aplicación en el navegador con ruta http://localhost/linkys/
+4.- Configuración para Dialogflow 
+ - Crear una cuenta en Dialogflow (https://dialogflow.cloud.google.com/)
+ - En Dialogflow importar el agente linkys (linkys.zip)
+ - Generar llaves necesarias para la comunicación entre la aplicación y Dialogflow. Ver video (https://www.youtube.com/watch?v=CXF9YlKhNUU)
+ - El archivo generado con las  llaves ponerlo en la carpeta del proyecto **linkys**.
+ - En el archivo functions.php, localizar la función detectIntent, buscar la línea **$key = array('credentials' => 'file_keys.josn');**, colocar el nombre del archivo descargado.
+5. Probar la aplicación en el navegador con ruta http://localhost/linkys/
  
