@@ -99,3 +99,8 @@ La búsqueda libre se realizará en el sitio con más recomendación que tenga, 
   - En el archivo functions.php, localizar la función detectIntent, buscar la línea **$key = array('credentials' => 'file_keys.josn');**, colocar el nombre del archivo descargado.
 5. Probar la aplicación en el navegador con ruta http://localhost/linkys/
  
+ # Trabajo futuro
+ 
+ Las mejoras a futuro se tienen las siguientes:
+ - Mejorar el entrenamiento para poder predecir mejor.
+ - Agregar más categorías
