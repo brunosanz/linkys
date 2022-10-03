@@ -5,6 +5,10 @@ Si deseas recomendar un sitio mandame un mensaje en [Messenger](http://m.me/rbru
 
 Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
 
+## Página principal
+
+![Index page](https://www.brunosanz.com/wp-content/uploads/2022/10/linkys.jpg)
+
 # Cómo usarlo
 
 Puedes utilizarlo de 3 maneras:
