@@ -9,6 +9,10 @@ Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
 
 ![Index page](https://www.brunosanz.com/wp-content/uploads/2022/10/linkys.jpg)
 
+### Buscando una recomendación
+
+![Index page](https://www.brunosanz.com/wp-content/uploads/2022/10/linkys_search.jpg)
+
 # Cómo usarlo
 
 Puedes utilizarlo de 3 maneras:
