@@ -1,5 +1,5 @@
 # Linkys
-Te recomienda sitios web para obtener mejores resultados a tus búsquedas.
+Te recomienda sitios web para obtener mejores resultados a tus búsquedas. Va a tratar de entender lo que necesitas y buscará en la base de datos que tiene para mostrarte el resultado mejor recomendado.
 
 Si deseas recomendar un sitio mandame un mensaje en [Messenger](http://m.me/rbrunosanz).
 
