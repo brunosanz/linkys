@@ -103,4 +103,5 @@ La búsqueda libre se realizará en el sitio con más recomendación que tenga, 
  
  Las mejoras a futuro se tienen las siguientes:
  - Mejorar el entrenamiento para poder predecir mejor.
- - Agregar más categorías
+ - Agregar más categorías.
+ - Crear un API REST.
