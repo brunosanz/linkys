@@ -1,5 +1,6 @@
 <?php
 require('config.php');
+include ('conexion.php');
 require('functions.php');
 require('header.php');
 
@@ -7,50 +8,69 @@ require('header.php');
 
 <main class="container">
 
-<section class="py-3 text-center">
-    <div class="row">
-      <div class="col-md-7 mx-auto">
-        <h1 class="display-2 fw-light text-white">
-          <a class="text-decoration-none" href="./">Linkys</a>
-        </h1>
-        <form class="form-horizontal lead py-3" id="search" method="post" action="search.php">
-          <input type="text" class="form-control form-control-lg border border-secondary rounded-pill lead" id="q" name="q" placeholder="¿Qué recomendación necesitas?">
-          <small class="text-start opacity-50 text-white small">
-            Escribir comando ( ob: javascript ) ó categoría ( cursos: ).
-            <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ayuda</a>
-          </small>
-        </form>
-      </div>
-    </div>
+<section class="text-center bg-light sticky-top pb-0 mb-0">
+    <?php echo setSearch(); ?>
 </section>
 
 <section>
+
   <div class="row">
-    <div class="col-md-7 mx-auto">
+    <div class="col-md-4">
+      <span class="badge rounded-pill bg-primary">Últimas recomendaciones de la comunidad</span>
+    </div>
+  </div>
 
-    <span class="badge rounded-pill bg-primary"><a class="text-decoration-none text-white" href="#">Últimas recomendaciones</a></span>
+  <div class="py-2"></div>
 
-    <div class="list-group w-auto py-2" style="border-radius: 25px;">
-      <a href="https://open-bootcamp.com/" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="https://community.open-bootcamp.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo_ob.88b52998.svg&w=128&q=75" alt="twbs" width="64" height="64" class="rounded-circle flex-shrink-0">
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">OpenBootcamp</h6>
-            <p class="mb-0 opacity-75">Aprende y Encuentra empleo GRATIS</p>
-            <p class="mb-0 small">Recomendado por OpenBootcamp</p>
-            <p class="mb-0 small">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dc3545" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                </svg> 21600
-                </p>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+
+  <?php
+  $sql= "select *, UNIX_TIMESTAMP(added_on) as added_on from search where status < 4 order by added_on desc limit 10;";
+  $con->query("SET NAMES 'utf8'");
+  $query = $con->query($sql);
+  if($query->num_rows != 0){
+        while($r=$query->fetch_array()){
+          $added_on = getAddOn($r["added_on"]);
+
+          echo '<div class="col-sm-6 col-lg-3 mb-3 grid-item">
+
+          <div class="card" style="border-radius: 25px;">
+            <div class="card-body">
+              <span class="badge rounded-pill chip bg-dark">
+                '.$r["category"].'
+              </span>
+              <a class="text-decoration-none" href="https://twitter.com/'.$r["recommended_by"].'" target="_blank">
+                <div class="recomended">
+                  <img class="avatar" src="'.$r["user_avatar"].'" width="36" height="36" />
+                </div>
+                <div class="user-name mb-0">'.$r["recommended_by"].'</div>
+                <div class="date"> '.$added_on.'</div>
+              </a>
+              
+              <h5 class="mb-0 my-2">
+                <a class="text-decoration-none" href="'.$r["url"].'">'.$r["name"].'</a>
+              </h5>
+              <p class="opacity-75 small">'.$r["description"].'</p>
+
+              <img class="card-img-top img-rounded img-fluid" src="'.$r["url_image"].'" />
+
+              <p class="card-text my-2">
+                <span class="float-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#dc3545" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg> '.$r["status_like"].'
+                </span>
+              </p>
+
+            </div>
           </div>
-          <small class="opacity-50 text-nowrap">Cursos</small>
-        </div>
-      </a>
-    </div>
+          
+        </div>';
+  }
+}
 
+?>
 
-    </div>
   </div>
 </section>
 

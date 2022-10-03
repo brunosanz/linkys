@@ -3,76 +3,57 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ayuda con Linkys</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Ayuda para utilizar Linkys</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <h5>Linkys</h5>
-        <p>Buscador con sitios web recomendados donde puedes obtener mejores resultados a tus búsquedas.</p>
+        <p>Te recomienda sitios web para obtener mejores resultados a tus búsquedas. Si deseas recomendar un sitio mandame un mensaje en <a class="text-decoration-none" href="http://m.me/rbrunosanz">Messenger</a>.</p>
         <hr>
         <h5>Cómo usarlo</h5>
         <p>Puedes utilizarlo de 3 maneras:</p>
         <ul>
             <li>Comandos -> <strong>ob: javascript </strong></li>
-            <li>Categorías -> <strong>cursos: </strong></li>
+            <li>Categorías -> <strong>descargar imagenes </strong></li>
             <li>Búsqueda libre -> <strong> cursos para aprender javascript </strong></li>
         </ul>
-        <p>En comandos y categorías terminar con <strong>dos puntos (:). </strong></p>
+        <p>En comandos terminar con <strong>dos puntos (:). </strong></p>
         <p>Al utilizar un comando la búsqueda se realizará en el sitio ligado a ese comando.</p>
-        <p>En categorías si se coloca algo que buscar, las recomendaciones mostradas ya tendrán en enlace listo para realizar la búsqueda.</p>
-        <p>La búsqueda libre se realizará en Google.</p>
+        <p>En categorías mostrará todos los sitios web relacionados, por ejemplo con <strong>descargar imagenes</strong> los resultados serán sitios web sobre imágenes.</p>
+        <p>La búsqueda libre se realizará en el sitio con más recomendación que tenga, ejemplo <strong>cursos para aprender javascript</strong> mandará a la página de <strong>OpenBootcamp</strong> buscando algún curso de JavaScript.</p>
         <hr>
         <h5>Comandos</h5>
         <ul>
-            <li>dafont - <strong>df:</strong></li>
-            <li>Dialnet - <strong>dn:</strong></li>
-            <li>ELSEVIER - <strong>el:</strong></li>
-            <li>DeePL/en/es - <strong>en:</strong></li>
-            <li>DeePL/es/en - <strong>es:</strong></li>
-            <li>FontGet - <strong>fg:</strong></li>
-            <li>Freepik - <strong>fp:</strong></li>
-            <li>Google Académico - <strong>ga:</strong></li>
-            <li>Google - <strong>go:</strong></li>
-            <li>Iconduck - <strong>id:</strong></li>
-            <li>Mi Aula - <strong>ma:</strong></li>
-            <li>Open Bootcamp - <strong>ob:</strong></li>
-            <li>Pixabay - <strong>pb:</strong></li>
-            <li>Pluto TV - <strong>ptv:</strong></li>
-            <li>Pexels - <strong>px:</strong></li>
-            <li>RAE - ASALE - <strong>rae:</strong></li>
-            <li>Reddalyc - <strong>rd:</strong></li>
-            <li>ResearchGate - <strong>rg:</strong></li>
-            <li>SciELO - <strong>se:</strong></li>
-            <li>Springer Link - <strong>sl:</strong></li>
-            <li>StackOverflow - <strong>so:</strong></li>
-            <li>SpringerOpen - <strong>sp:</strong></li>
-            <li>Tubi - <strong>tubi:</strong></li>
-            <li>Unsplash - <strong>us:</strong></li>
-            <li>ViX - <strong>vix:</strong></li>
+          <?php
+            $sql= "select name, shortcut from search;";
+            $con->query("SET NAMES 'utf8'");
+            $query = $con->query($sql);
+            if($query->num_rows != 0){
+              while($r=$query->fetch_array()){
+                echo '<li>'.$r["name"].' - <strong>'.$r["shortcut"].':</strong></li>';
+              }
+            }
+          ?>
         </ul>
         <hr>
         <h5>Categorías</h5>
         <ul>
-            <li><strong>font,fuente</strong></li>
-            <li><strong>edu,educacion</strong></li>
-            <li><strong>traductor</strong></li>
-            <li><strong>imagen, img, pic, picture</strong></li>
-            <li><strong>buscador</strong></li>
-            <li><strong>icons, iconos, emojis</strong></li>
-            <li><strong>videotutoriales</strong></li>
-            <li><strong>cursos, courses, bootcamp, estudiar, estudio, study</strong></li>
-            <li><strong>livetv, peliculas, series, movies</strong></li>
-            <li><strong>diccionario, dictionary</strong></li>
-            <li><strong>code, dev</strong></li>
-            <li><strong>peliculas, series, movies</strong></li>
-            <li><strong>musica, music</strong></li>
-            <li><strong>video, videos, entertainment</strong></li>
+          <?php
+              $sql= "select category from search group by category;";
+              $con->query("SET NAMES 'utf8'");
+              $query = $con->query($sql);
+              if($query->num_rows != 0){
+                while($r=$query->fetch_array()){
+                  echo '<li><strong>'.$r["category"].'</strong></li>';
+                }
+              }
+            ?>
         </ul>
       </div>
     </div>
   </div>
 </div>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery-3.6.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     </body>
 </html>

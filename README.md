@@ -1,73 +1,82 @@
 # Linkys
-Buscador con sitios web recomendados donde puedes obtener mejores resultados a tus búsquedas. Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
+Te recomienda sitios web para obtener mejores resultados a tus búsquedas.
+
+Si deseas recomendar un sitio mandame un mensaje en [Messenger](http://m.me/rbrunosanz).
+
+Ver demo: [Linkys](https://www.brunosanz.com/linkys/)
 
 # Cómo usarlo
 
 Puedes utilizarlo de 3 maneras:
 
-- Comandos -> ob: javascript
-- Categorías -> cursos:
-- Búsqueda libre -> cursos para aprender javascript
+- Comandos -> **ob: javascript**
+- Categorías -> **descargar imagenes**
+- Búsqueda libre -> **cursos para aprender javascript**
 
-En comandos y categorías terminar con dos puntos (:).
+En comandos terminar con **dos puntos (:)**.
 
 Al utilizar un comando la búsqueda se realizará en el sitio ligado a ese comando.
 
-En categorías si se coloca algo que buscar, los sitios recomendados ya tendrán el enlace listo para realizar la búsqueda.
+En categorías mostrará todos los sitios web relacionados, por ejemplo con **descargar imagenes** los resultados serán sitios web sobre imágenes.
 
-La búsqueda libre se realizará en Google.
+La búsqueda libre se realizará en el sitio con más recomendación que tenga, ejemplo **cursos para aprender javascript** mandará a la página de **OpenBootcamp** buscando algún curso de JavaScript.
 
 ### Comandos
 
-- dafont - df:
-- Dialnet - dn:
-- ELSEVIER - el:
-- DeePL/en/es - en:
-- DeePL/es/en - es:
-- FontGet - fg:
-- Freepik - fp:
-- Google Académico - ga:
-- Google - go:
-- Iconduck - id:
-- Mi Aula - ma:
-- Open Bootcamp - ob:
-- Pixabay - pb:
-- Pluto TV - ptv:
-- Pexels - px:
-- RAE - ASALE - rae:
-- Reddalyc - rd:
-- ResearchGate - rg:
-- SciELO - se:
-- Springer Link - sl:
-- StackOverflow - so:
-- SpringerOpen - sp:
-- Tubi - tubi:
-- Unsplash - us:
-- ViX - vix:
+- Dafont - **df:**
+- Dialnet - **dn:**
+- edX - **edx:**
+- ELSEVIER - **el:**
+- DeepL Translate - **es:**
+- FontGet - **fg:**
+- Freepik - **fp:**
+- Google Académico - **ga:**
+- Google Actívate - **gac:**
+- Google - **go:**
+- Iconduck - **id:**
+- Mi Aula - **ma:**
+- Microsoft Learn - **ms:**
+- Open Bootcamp - **ob:**
+- Pixabay - **pb:**
+- Pluto TV - **ptv:**
+- Pexels - **px:**
+- RAE - ASALE - **rae:**
+- Reddalyc - **rd:**
+- ResearchGate - **rg:**
+- SciELO - **se:**
+- Springer Link - **sl:**
+- StackOverflow - **so:**
+- SpringerOpen - **sp:**
+- Tubi - **tubi:**
+- Unsplash - **us:**
+- ViX - **vix:**
+- World Wide Science - **wws:**
+- YouTubeMusic - **ym:**
+- YouTube - **yt:**
 
 ### Categorías
 
-- font,fuente
-- edu,educacion
-- traductor
-- imagen, img, pic, picture
-- buscador
-- icons, iconos, emojis
-- videotutoriales
-- cursos, courses, bootcamp, estudiar, estudio, study
-- livetv, peliculas, series, movies
-- diccionario, dictionary
-- code, dev
-- peliculas, series, movies
-- musica, music
-- video, videos, entertainment
-
+- **buscador**
+- **code, dev**
+- **cursos**
+- **diccionario**
+- **educacion**
+- **fuentes**
+- **iconos, imagenes**
+- **imagenes**
+- **livetv, peliculas, series**
+- **musica**
+- **peliculas, series**
+- **traductor**
+- **videos**
+- **videotutoriales**
 
 # Herramientas
 
 - Lenguaje: PHP
 - Framework: Bootstrap
 - Database: MySQL
+- IA: Dialogflow
 
 # Ejecutar en local
 
